@@ -1,0 +1,179 @@
+{
+	"info": {
+		"_postman_id": "2551fa7a-3d81-4f11-963a-9033c83bf097",
+		"name": "Teste.swegger.informacoes.empregado.plataforma",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21980489"
+	},
+	"item": [
+		{
+			"name": "inm-test-api.herokuapp.com/empregado/cadastrar",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"connection": true,
+					"accept-encoding": true,
+					"accept": true,
+					"user-agent": true,
+					"host": true,
+					"content-length": true
+				}
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "automacao",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "inmetrics",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"admissao\": \"01/10/2022\",\r\n    \"cargo\": \"especialista de teste\",\r\n    \"comissao\": \"20.000,00\",\r\n    \"cpf\": \"723.134.620-05\",\r\n    \"departamentoId\": 1,\r\n    \"nome\": \"Nome de Teste Prova\",\r\n    \"salario\": \"28.000,00\",\r\n    \"sexo\": \"f\",\r\n    \"tipoContratacao\": \"pj\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "inm-test-api.herokuapp.com/empregado/cadastrar",
+					"host": [
+						"inm-test-api",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"empregado",
+						"cadastrar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://inm-test-api.herokuapp.com/empregado/cadastrar",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-length": true,
+					"connection": true,
+					"accept-encoding": true,
+					"accept": true,
+					"user-agent": true,
+					"host": true,
+					"content-type": true
+				}
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "automacao",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "inmetrics",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"admissao\": \"01/10/2022\",\r\n    \"cargo\": \"especialista de teste\",\r\n    \"comissao\": \"20.000,00\",\r\n    \"cpf\": \"723.134.620-05\",\r\n    \"departamentoId\": 1,\r\n    \"nome\": \"Nome de Teste Prova Alterado\",\r\n    \"salario\": \"28.000,00\",\r\n    \"sexo\": \"f\",\r\n    \"tipoContratacao\": \"pj\"\r\n}"
+				},
+				"url": {
+					"raw": "inm-test-api.herokuapp.com/empregado/alterar/1520",
+					"host": [
+						"inm-test-api",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"empregado",
+						"alterar",
+						"1520"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "inm-test-api.herokuapp.com/empregado/deletar/1520",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"host": true,
+					"user-agent": true,
+					"accept": true,
+					"accept-encoding": true,
+					"connection": true
+				}
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "automacao",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "inmetrics",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "inm-test-api.herokuapp.com/empregado/deletar/1520",
+					"host": [
+						"inm-test-api",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"empregado",
+						"deletar",
+						"1520"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
